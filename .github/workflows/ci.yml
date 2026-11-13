@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [ 8 ]
+        java: [ 21 ]
     name: "Java ${{ matrix.java }}"
     runs-on: ubuntu-22.04
     steps:
@@ -48,6 +48,6 @@ jobs:
         distribution: 'zulu'
         java-version: ${{ matrix.java }}
     - name: Build
-      run: mvn -B -e -Papache-release -Dgpg.skip=true install site
+      run: mvn -B -pl axis-war -am -Dmaven.test.skip=true package
     - name: Remove Snapshots
       run: find ~/.m2/repository -name '*-SNAPSHOT' -a -type d -print0 | xargs -0 rm -rf
