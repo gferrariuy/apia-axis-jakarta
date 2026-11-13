@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>maven</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>maven-jakarta</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>wsdd-maven-plugin</artifactId>
+    <artifactId>wsdd-maven-plugin-jakarta</artifactId>
     <packaging>maven-plugin</packaging>
     <name>wsdd-maven-plugin</name>
     <description>
@@ -41,7 +41,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-model</artifactId>
+            <artifactId>axis-model-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

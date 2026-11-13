@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>maven</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>maven-jakarta</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>nsmap</artifactId>
+    <artifactId>nsmap-jakarta</artifactId>
     <name>Maven plugin common classes</name>
     <description>
     	Contains classes shared by wsdl2java-maven-plugin and java2wsdl-maven-plugin.

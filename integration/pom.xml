@@ -20,39 +20,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>axis-project</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta-project</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>integration</artifactId>
+    <artifactId>integration-jakarta</artifactId>
     <name>Axis :: Integration tests</name>
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-codegen</artifactId>
+            <artifactId>axis-codegen-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-testutils</artifactId>
-            <version>${project.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>addr-sample</artifactId>
+            <artifactId>axis-testutils-jakarta</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>echo-sample</artifactId>
+            <artifactId>addr-sample-jakarta</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>echo-sample-jakarta</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
@@ -66,7 +66,7 @@
         <plugins>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>java2wsdl-maven-plugin</artifactId>
+                <artifactId>java2wsdl-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>
@@ -214,7 +214,7 @@
             </plugin>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>wsdl2java-maven-plugin</artifactId>
+                <artifactId>wsdl2java-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <configuration>
                     <testHttpPortSystemProperty>test.functional.ServicePort</testHttpPortSystemProperty>
@@ -1379,7 +1379,7 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>addr-sample</artifactId>
+                                    <artifactId>addr-sample-jakarta</artifactId>
                                     <version>${project.version}</version>
                                     <type>wsdd</type>
                                     <classifier>deploy</classifier>
@@ -1411,7 +1411,7 @@
             </plugin>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>axis-server-maven-plugin</artifactId>
+                <artifactId>axis-server-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>

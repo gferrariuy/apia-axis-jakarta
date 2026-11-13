@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>axis-project</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta-project</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>axis-rt-core</artifactId>
+    <artifactId>axis-rt-core-jakarta</artifactId>
     <name>Axis Runtime Core</name>
     <url>${baseUrl}/core</url>
     <distributionManagement>
@@ -37,7 +37,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-jaxrpc</artifactId>
+            <artifactId>axis-jaxrpc-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -143,8 +143,8 @@
                                     <artifactId>xmlParserAPIs</artifactId>
                                 </artifact>
                                 <artifact>
-                                    <groupId>org.apache.axis</groupId>
-                                    <artifactId>axis-saaj</artifactId>
+                                    <groupId>io.github.gferrariuy</groupId>
+                                    <artifactId>axis-saaj-jakarta</artifactId>
                                     <version>${project.version}</version>
                                 </artifact>
                             </artifacts>

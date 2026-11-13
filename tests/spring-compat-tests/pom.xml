@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>tests</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>tests-jakarta</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>spring-compat-tests</artifactId>
+    <artifactId>spring-compat-tests-jakarta</artifactId>
     <name>Spring Compatibility Tests</name>
     <description>
         Contains a set of tests that check that Axis remains compatible with Spring (remoting).
@@ -36,7 +36,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -54,7 +54,7 @@
         <plugins>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>wsdl2java-maven-plugin</artifactId>
+                <artifactId>wsdl2java-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>
@@ -74,7 +74,7 @@
             </plugin>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>wsdd-maven-plugin</artifactId>
+                <artifactId>wsdd-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>
@@ -112,7 +112,7 @@
             </plugin>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>axis-server-maven-plugin</artifactId>
+                <artifactId>axis-server-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>

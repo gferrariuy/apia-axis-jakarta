@@ -20,49 +20,79 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>axis-project</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta-project</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>axis</artifactId>
+    <artifactId>apia-axis-jakarta</artifactId>
     <name>Axis Uber-JAR</name>
     <description>Uber-JAR containing the same packages as the corresponding JAR from Axis 1.4. For compatibility only.</description>
     <url>${baseUrl}</url>
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-databinding-castor</artifactId>
+            <artifactId>axis-rt-databinding-castor-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-jws</artifactId>
+            <artifactId>axis-rt-databinding-xmlbeans-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-provider-bsf</artifactId>
+            <artifactId>axis-rt-management-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-transport-mail</artifactId>
+            <artifactId>axis-rt-jws-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-codegen</artifactId>
+            <artifactId>axis-rt-provider-bsf-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-tools</artifactId>
+            <artifactId>axis-rt-soapmonitor-jakarta</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>axis-rt-transport-jms-jakarta</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>axis-rt-transport-http-hc3-jakarta</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>axis-rt-transport-mail-jakarta</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>axis-codegen-jakarta</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>axis-model-jakarta</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>axis-tools-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
@@ -80,26 +110,49 @@
                             <artifactSet>
                                 <includes>
                                     <!-- Please keep src/site/xdoc/artifacts.xml in sync with this list -->
-                                    <include>${project.groupId}:axis-rt-compat</include>
-                                    <include>${project.groupId}:axis-rt-core</include>
-                                    <include>${project.groupId}:axis-rt-databinding-castor</include>
-                                    <include>${project.groupId}:axis-rt-databinding-xmlbeans</include>
-                                    <include>${project.groupId}:axis-rt-management</include>
-                                    <include>${project.groupId}:axis-rt-jws</include>
-                                    <include>${project.groupId}:axis-rt-provider-bsf</include>
-                                    <include>${project.groupId}:axis-rt-soapmonitor</include>
-                                    <include>${project.groupId}:axis-rt-transport-jms</include>
-                                    <include>${project.groupId}:axis-rt-transport-http-hc3</include>
-                                    <include>${project.groupId}:axis-rt-transport-mail</include>
-                                    <include>${project.groupId}:axis-model</include>
-                                    <include>${project.groupId}:axis-codegen</include>
-                                    <include>${project.groupId}:axis-tools</include>
-                                    <include>${project.groupId}:soapmonitor-client</include>
-                                    <include>${project.groupId}:tcpmon</include>
+                                    <include>${project.groupId}:axis-rt-core-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-databinding-castor-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-databinding-xmlbeans-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-management-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-jws-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-provider-bsf-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-soapmonitor-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-transport-jms-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-transport-http-hc3-jakarta</include>
+                                    <include>${project.groupId}:axis-rt-transport-mail-jakarta</include>
+                                    <include>${project.groupId}:axis-model-jakarta</include>
+                                    <include>${project.groupId}:axis-codegen-jakarta</include>
+                                    <include>${project.groupId}:axis-tools-jakarta</include>
+                                    <include>${project.groupId}:soapmonitor-client-jakarta</include>
+                                    <include>${project.groupId}:tcpmon-jakarta</include>
                                 </includes>
                             </artifactSet>
                             <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
                             <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>empty-javadoc-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>javadoc</classifier>
+                            <includes>
+                                <include>META-INF/**</include>
+                            </includes>
                         </configuration>
                     </execution>
                 </executions>

@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>test</groupId>
-    <artifactId>writeStubToTestSources</artifactId>
+    <artifactId>writeStubToTestSources-jakarta</artifactId>
     <version>1</version>
     <dependencies>
         <dependency>
             <groupId>@project.groupId@</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>@project.version@</version>
         </dependency>
     </dependencies>
@@ -33,7 +33,7 @@
         <plugins>
             <plugin>
                 <groupId>@project.groupId@</groupId>
-                <artifactId>wsdl2java-maven-plugin</artifactId>
+                <artifactId>wsdl2java-maven-plugin-jakarta</artifactId>
                 <version>@project.version@</version>
                 <executions>
                     <execution>
