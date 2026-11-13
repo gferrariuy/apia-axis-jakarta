@@ -29,7 +29,7 @@
     <packaging>war</packaging>
     <name>Axis :: WAR</name>
     <properties>
-        <javaVersion>1.5</javaVersion>
+        <javaVersion>1.8</javaVersion>
     </properties>
     <dependencies>
         <dependency>
@@ -84,12 +84,12 @@
         </dependency>
     </dependencies>
     <build>
+        <finalName>apia-jakarta</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                    <packagingExcludes>WEB-INF/lib/soapmonitor-applet-*.jar</packagingExcludes>
-                    <packagingExcludes>*.jws</packagingExcludes>
+                    <packagingExcludes>WEB-INF/lib/soapmonitor-applet-*.jar,WEB-INF/lib/jakarta.servlet-api-*.jar,*.jws</packagingExcludes>
                     <overlays>
                         <overlay>
                             <groupId>${project.groupId}</groupId>

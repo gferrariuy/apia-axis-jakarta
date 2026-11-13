@@ -31,7 +31,7 @@
         Contains a set of tests that check that Axis remains compatible with Spring (remoting).
     </description>
     <properties>
-        <javaVersion>1.5</javaVersion>
+        <javaVersion>1.8</javaVersion>
     </properties>
     <dependencies>
         <dependency>

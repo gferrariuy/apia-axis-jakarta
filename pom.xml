@@ -266,7 +266,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.1.1</version>
+                    <version>3.4.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.gmaven</groupId>
@@ -515,7 +515,7 @@
         </plugins>
     </reporting>
     <properties>
-        <javaVersion>1.4</javaVersion>
+        <javaVersion>1.8</javaVersion>
         <baseUrl>http://axis.apache.org/axis/java</baseUrl>
         <baseSiteUrl>scm:svn:https://svn.apache.org/repos/asf/axis/site/axis/java</baseSiteUrl>
     </properties>

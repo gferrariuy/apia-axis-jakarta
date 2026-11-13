@@ -1,6 +1,20 @@
              Axis (Apache eXtensible Interaction System)
              ------------------------------------------- 
 
+Apia Axis Jakarta
+-----------------
+
+This repository contains the Apia Jakarta variant of Apache Axis 1.x.
+The servlet integration uses Jakarta Servlet 6.1 for deployment on
+Tomcat 11, while the legacy JAX-RPC and SAAJ APIs remain in their
+original javax.xml namespaces for compatibility with existing services.
+
+Build the deployable WAR with JDK 21:
+
+    mvn -pl axis-war -am -Dmaven.test.skip=true package
+
+The generated artifact is axis-war/target/apia-jakarta.war.
+
 Welcome to Axis!  You'll find documentation in the docs/ directory.
 
 Please read the release notes (release-notes.html) in this directory for
