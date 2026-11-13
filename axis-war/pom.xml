@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>axis-project</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta-project</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>axis-war</artifactId>
+    <artifactId>axis-war-jakarta</artifactId>
     <packaging>war</packaging>
     <name>Axis :: WAR</name>
     <properties>
@@ -34,22 +34,22 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-jws</artifactId>
+            <artifactId>axis-rt-jws-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-soapmonitor</artifactId>
+            <artifactId>axis-rt-soapmonitor-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-management</artifactId>
+            <artifactId>axis-rt-management-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -58,7 +58,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>soapmonitor-applet</artifactId>
+            <artifactId>soapmonitor-applet-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -93,7 +93,7 @@
                     <overlays>
                         <overlay>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>soapmonitor-applet</artifactId>
+                            <artifactId>soapmonitor-applet-jakarta</artifactId>
                             <type>jar</type>
                         </overlay>
                     </overlays>

@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>axis-project</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta-project</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>axis-rt-transport-http-javanet</artifactId>
+    <artifactId>axis-rt-transport-http-javanet-jakarta</artifactId>
     <name>java.net HTTP Transport</name>
     <description>
     	An alternative HTTP transport that uses the java.net.HttpURLConnection API. This transport only works with Java 1.5.
@@ -43,7 +43,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -53,7 +53,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>interop-mock</artifactId>
+            <artifactId>interop-mock-jakarta</artifactId>
             <version>${project.version}</version>
             <type>war</type>
             <scope>test</scope>
@@ -69,7 +69,7 @@
     	<plugins>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>wsdl2java-maven-plugin</artifactId>
+                <artifactId>wsdl2java-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>
@@ -123,7 +123,7 @@
             </plugin>
             <plugin>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>axis-server-maven-plugin</artifactId>
+                <artifactId>axis-server-maven-plugin-jakarta</artifactId>
                 <version>${project.version}</version>
                 <executions>
                     <execution>

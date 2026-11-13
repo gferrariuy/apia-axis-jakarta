@@ -15,6 +15,31 @@ Build the deployable WAR with JDK 21:
 
 The generated artifact is axis-war/target/apia-jakarta.war.
 
+Maven coordinates
+-----------------
+
+Use the Jakarta-compatible Axis library from Maven Central with:
+
+    <dependency>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta</artifactId>
+        <version>1.4.1.1</version>
+    </dependency>
+
+The deployable web application is published as
+`io.github.gferrariuy:axis-war-jakarta:1.4.1.1`.
+
+Publishing to Maven Central
+---------------------------
+
+Publishing requires a `central` server entry in Maven settings containing a
+Sonatype Central Portal user token and a local GPG key. Build, sign and upload
+the release bundle with:
+
+    mvn -Pcentral-release -pl axis,axis-war -am -Dmaven.test.skip=true deploy
+
+After validation, publish the deployment from the Central Portal.
+
 Welcome to Axis!  You'll find documentation in the docs/ directory.
 
 Please read the release notes (release-notes.html) in this directory for

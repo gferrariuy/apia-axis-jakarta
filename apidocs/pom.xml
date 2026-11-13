@@ -20,12 +20,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.axis</groupId>
-        <artifactId>axis-project</artifactId>
-        <version>1.4.1-SNAPSHOT</version>
+        <groupId>io.github.gferrariuy</groupId>
+        <artifactId>apia-axis-jakarta-project</artifactId>
+        <version>1.4.1.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>apidocs</artifactId>
+    <artifactId>apidocs-jakarta</artifactId>
     <packaging>pom</packaging>
     <name>Javadoc</name>
     <url>${baseUrl}/apiDocs</url>
@@ -41,97 +41,97 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-ant</artifactId>
+            <artifactId>axis-ant-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-codegen</artifactId>
+            <artifactId>axis-codegen-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-jaxrpc</artifactId>
+            <artifactId>axis-jaxrpc-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-core</artifactId>
+            <artifactId>axis-rt-core-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-databinding-castor</artifactId>
+            <artifactId>axis-rt-databinding-castor-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-databinding-xmlbeans</artifactId>
+            <artifactId>axis-rt-databinding-xmlbeans-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-jws</artifactId>
+            <artifactId>axis-rt-jws-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-management</artifactId>
+            <artifactId>axis-rt-management-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-provider-bsf</artifactId>
+            <artifactId>axis-rt-provider-bsf-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-soapmonitor</artifactId>
+            <artifactId>axis-rt-soapmonitor-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-transport-http-hc3</artifactId>
+            <artifactId>axis-rt-transport-http-hc3-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-transport-http-javanet</artifactId>
+            <artifactId>axis-rt-transport-http-javanet-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-transport-jms</artifactId>
+            <artifactId>axis-rt-transport-jms-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-rt-transport-mail</artifactId>
+            <artifactId>axis-rt-transport-mail-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-saaj</artifactId>
+            <artifactId>axis-saaj-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-standalone-server</artifactId>
+            <artifactId>axis-standalone-server-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>axis-tools</artifactId>
+            <artifactId>axis-tools-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>soapmonitor-client</artifactId>
+            <artifactId>soapmonitor-client-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>tcpmon</artifactId>
+            <artifactId>tcpmon-jakarta</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
