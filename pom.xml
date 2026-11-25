@@ -28,7 +28,7 @@
     <artifactId>apia-axis-jakarta-project</artifactId>
     <name>Apia Axis Jakarta</name>
     <description>Jakarta Servlet variant of the maintained Apache Axis 1.x fork for Tomcat 10.1 and Tomcat 11.</description>
-    <version>1.4.1.1</version>
+    <version>1.4.1.2</version>
     <packaging>pom</packaging>
     <url>${baseUrl}/</url>
     <licenses>
